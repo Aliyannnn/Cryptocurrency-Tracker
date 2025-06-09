@@ -1,0 +1,74 @@
+/* CoinPage.css */
+.coin-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.coin-sidebar {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 2px solid grey;
+  padding: 20px;
+}
+
+.coin-image {
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.coin-heading {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+.coin-description {
+  font-family: Montserrat, sans-serif;
+  padding: 0 10px 15px;
+  text-align: justify;
+  font-size: 16px;
+  color: #ddd;
+}
+
+.coin-market-data {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Montserrat, sans-serif;
+}
+
+.coin-data-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.coin-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.loader {
+  width: 100%;
+  height: 4px;
+  background-color: gold;
+  animation: loader 1s infinite alternate;
+}
+
+@keyframes loader {
+  0% {
+    transform: scaleX(0.1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}

@@ -1,0 +1,141 @@
+/* src/styles/CoinsTable.css */
+
+.coins-table-wrapper {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0e0e0e;
+}
+
+.coins-table-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background-color: #1c1c1c;
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.table-container {
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #121212;
+}
+
+.coins-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.coins-table thead {
+  background-color: #eebc1d;
+  color: #000;
+  font-weight: 700;
+}
+
+.coins-table th,
+.coins-table td {
+  padding: 12px 16px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.table-row {
+  cursor: pointer;
+  background-color: #16171a;
+  transition: background-color 0.3s ease;
+}
+
+.table-row:hover {
+  background-color: #131111;
+}
+
+.coin-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.coin-cell img {
+  height: 40px;
+  margin-bottom: 4px;
+}
+
+.coin-symbol {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.coin-name {
+  color: darkgrey;
+  font-size: 14px;
+}
+
+.positive {
+  color: rgb(14, 203, 129);
+  font-weight: 500;
+}
+
+.negative {
+  color: red;
+  font-weight: 500;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.page-button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #1f1f1f;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.page-button:hover,
+.page-button.active {
+  background-color: #eebc1d;
+  color: #000;
+}
+
+.loader {
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, gold 50%, #333 50%);
+  background-size: 200% 100%;
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+main{
+    margin-top: 400px;
+    margin-bottom: 200px;
+}

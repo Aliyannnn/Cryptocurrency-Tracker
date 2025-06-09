@@ -1,0 +1,44 @@
+
+.coin-info-container {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  padding: 40px;
+}
+
+@media (max-width: 768px) {
+  .coin-info-container {
+    width: 100%;
+    margin-top: 0;
+    padding: 20px;
+    padding-top: 0;
+  }
+}
+
+.days-selector {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.loader-large {
+  width: 250px;
+  height: 250px;
+  border: 10px solid rgba(255, 215, 0, 0.3);
+  border-top: 10px solid gold;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 50px auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
